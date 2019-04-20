@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>GitHub-stars</title>
+  <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main class="main">
+    <div class="jumbotron">
+      <h1 class="display-4 title">Repositories with more <br> than 50000 stars on GitHub!</h1>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Avatar</th>
+            <th scope="col">Name</th>
+            <th scope="col">Login</th>
+            <th scope="col">Rating</th>
+            <th scope="col">
+              <div class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Language</a>
+                <div class="dropdown-menu" id="lang" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 40px, 0px);">
+
+                </div>
+              </div>
+            </th>
+            <th scope="col">
+              <div class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Update</a>
+                <div class="dropdown-menu" id="update" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 40px, 0px);">
+
+                </div>
+            </th>
+            <th scope="col">Link</th>
+            <th class="th-button" scope="col">
+              <button type="button" id="btn-tooltip" class="btn btn-secondary btn-reset" data-toggle="tooltip" data-placement="left" title="" data-original-title="Remove the current filter">Reset</button>
+            </th>
+          </tr>
+        </thead>
+
+        <tbody id="reps-list">
+
+        <tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="js/index.js">
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+    $('#btn-tooltip').tooltip();
+  </script>
+
+</body>
+
+</html>
